@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="HouseHoldDB@localhost" uuid="b9f56c69-b316-446d-b54d-3700372ffc21">
-      <database-info product="MariaDB" version="10.4.12-MariaDB-1:10.4.12+maria~bionic" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.6.0" dbms="MARIADB" exact-version="10.4.12" exact-driver-version="2.6">
+    <data-source name="HouseHoldDB@192.168.1.57" uuid="b9f56c69-b316-446d-b54d-3700372ffc21">
+      <database-info product="MariaDB" version="10.4.12-MariaDB-1:10.4.12+maria~bionic" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.6.0" dbms="MARIADB" exact-version="10.4.12">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
