@@ -84,6 +84,8 @@ public class HouseHoldServiceApplication
                 new DataDAO(hibernate.getSessionFactory());
         final FieldDAO fieldDAO =
                 new FieldDAO(hibernate.getSessionFactory());
+        final IotNodeDAO iotNodeDAO =
+                new IotNodeDAO(hibernate.getSessionFactory());
         // Vytvorené objekty reprezentujúce REST rozhranie
         environment.jersey()
                 .register(new HouseHoldResource(houseHoldDAO, dataDAO));
@@ -91,6 +93,8 @@ public class HouseHoldServiceApplication
                 .register(new FieldResource(fieldDAO));
         environment.jersey()
                 .register(new DateParameterConverterProvider());
+        environment.jersey()
+                .register(new IoTNodeResource(iotNodeDAO));
 
         // Vytvorenie Healthcheck (overenie zdravia aplikácie), ktorý
         // využijeme na otestovanie databázy
