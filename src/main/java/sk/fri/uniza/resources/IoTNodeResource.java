@@ -65,6 +65,7 @@ public class IoTNodeResource {
     */
 
     /*
+    // spojenie allIotNodes() a findByHouseHold
     @GET
     @Path("filter")
     @UnitOfWork //Otvorí novú hibernate session
